@@ -27,5 +27,5 @@ export class EJERCICIO5 {
     }else{
       this.isDisabled = false;
     }
-  }
+  }//
 }

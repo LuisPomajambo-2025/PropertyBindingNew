@@ -1,7 +1,9 @@
 <p>ONE WAY BINDING – EVENTO</p>
-<p>EJERCICIO 5: CONTADOR CON BOTONES Y ENTRADA DE TEXTO - Fase1</p>
+<p>EJERCICIO 5: CONTADOR CON BOTONES Y ENTRADA DE TEXTO - Fase1, Fase2</p>
+<div tabindex="0" (keydown.enter)="incrementar()">
 <button (click)="incrementar()">Botón Incremento</button>
-<button (click)="decrementar()">Botón Decremento</button>
-
-<button [disabled]="isDisabled" (click)="actualizar();verificarValor()" >Botón Restablezca </button>
+<button [disabled]="isDisabled" (click)="decrementar();verificarValor();">Botón Decremento</button>
+<button (click)="actualizar();verificarValor();" >Botón Restablezca </button>
+   Haz click y Presiona Enter.
 <p>Valor actual: {{ valor }}</p>
+</div>

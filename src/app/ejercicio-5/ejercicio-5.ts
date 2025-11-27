@@ -16,7 +16,6 @@ export class EJERCICIO5 {
   decrementar(){
     this.valor--;
     this.verificarValor();
-
   }
 
   actualizar(){

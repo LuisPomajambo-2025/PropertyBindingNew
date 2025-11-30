@@ -1,0 +1,35 @@
+<p>TWO WAY BINDING - EJERCICIO 7</p>
+<h2>Calculadora de Divisas</h2>
+
+<label>
+  Cantidad:
+  <input type="number" [(ngModel)]="cantidad">
+</label>
+
+<br><br>
+
+<label>
+  De:
+  <select [(ngModel)]="monedaOrigen">
+    <option value="EUR">Euro (EUR)</option>
+    <option value="USD">Dólar (USD)</option>
+    <option value="GBP">Libra (GBP)</option>
+  </select>
+</label>
+
+<label style="margin-left: 20px;">
+  A:
+  <select [(ngModel)]="monedaDestino">
+    <option value="EUR">Euro (EUR)</option>
+    <option value="USD">Dólar (USD)</option>
+    <option value="GBP">Libra (GBP)</option>
+  </select>
+</label>
+
+<br><br>
+
+<button (click)="convertir()">Convertir</button>
+
+<br><br>
+
+<h3>Resultado: {{ resultado }}</h3>

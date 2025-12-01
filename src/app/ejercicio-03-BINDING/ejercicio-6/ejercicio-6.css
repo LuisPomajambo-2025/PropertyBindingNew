@@ -1,0 +1,15 @@
+input {
+  width: 80px;
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}

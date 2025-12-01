@@ -1,0 +1,17 @@
+<p>TWO WAY BINDING</p>
+<p>TWO WAY BINDING</p>
+<h2>Calculadora (Two-Way Binding clásico)</h2>
+
+<div>
+  <input type="number" [(ngModel)]="numero1" placeholder="Número 1">
+  <input type="number" [(ngModel)]="numero2" placeholder="Número 2">
+</div>
+
+<div>
+  <button (click)="operacion='sumar'">+</button>
+  <button (click)="operacion='restar'">-</button>
+  <button (click)="operacion='multiplicar'">×</button>
+  <button (click)="operacion='dividir'">÷</button>
+</div>
+
+<h3>Resultado: {{ calcular() }}</h3>

@@ -1,0 +1,28 @@
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;               /* Menú horizontal */
+  gap: 20px;                   /* Separación entre items */
+  background: #f4f4f4;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background: #ddd;
+}
+
+.activo {
+  background: #333;
+  color: white;
+}

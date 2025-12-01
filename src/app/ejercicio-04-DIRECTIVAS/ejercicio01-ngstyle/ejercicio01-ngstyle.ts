@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './ejercicio01-ngstyle.css',
 })
 export class Ejercicio01NGSTYLE {
-esActivo: boolean = false;
 
-  toggleEstado() {
-    this.esActivo = !this.esActivo;
-  }
 }

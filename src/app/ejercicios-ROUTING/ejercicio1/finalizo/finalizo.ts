@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink, RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-parametro',
+  selector: 'app-finalizo',
   imports: [RouterModule],
-  templateUrl: './parametro.html',
-  styleUrl: './parametro.css',
+  templateUrl: './finalizo.html',
+  styleUrl: './finalizo.css',
 })
-export class Parametro implements OnInit {
+export class Finalizo implements OnInit {
   id: number=0;
   constructor(private route: ActivatedRoute) {}
   ngOnInit():void {
@@ -15,6 +15,6 @@ export class Parametro implements OnInit {
     if(param){
       this.id = Number(param);
     }
-    console.log('Parametro componente inicializado con id', this.id);
+    console.log('Parametro componente finalizo inicializado con id', this.id);
   }
 }

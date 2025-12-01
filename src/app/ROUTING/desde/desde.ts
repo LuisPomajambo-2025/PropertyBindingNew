@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { Parametro } from '../parametro/parametro';
 
 @Component({
   selector: 'app-desde',

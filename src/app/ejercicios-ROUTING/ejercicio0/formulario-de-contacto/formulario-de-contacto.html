@@ -1,1 +1,54 @@
 <p>formulario-de-contacto works!</p>
+<h2>Formulario de Contacto</h2>
+
+<form #formContacto="ngForm" (ngSubmit)="enviar()">
+
+  <!-- Nombre -->
+  <label for="nombre">Nombre:</label>
+  <input
+    type="text"
+    id="nombre"
+    name="nombre"
+    required
+    [(ngModel)]="contacto.nombre"
+  />
+  <br><br>
+
+  <!-- Apellidos -->
+  <label for="apellidos">Apellidos:</label>
+  <input
+    type="text"
+    id="apellidos"
+    name="apellidos"
+    required
+    [(ngModel)]="contacto.apellidos"
+  />
+  <br><br>
+
+  <!-- Correo electrónico -->
+  <label for="email">Correo electrónico:</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    required
+    [(ngModel)]="contacto.email"
+  />
+  <br><br>
+
+  <!-- Teléfono -->
+  <label for="telefono">Teléfono:</label>
+  <input
+    type="tel"
+    id="telefono"
+    name="telefono"
+    required
+    [(ngModel)]="contacto.telefono"
+  />
+  <br><br>
+
+  <button type="submit" [disabled]="formContacto.invalid">
+    Enviar
+  </button>
+
+</form>

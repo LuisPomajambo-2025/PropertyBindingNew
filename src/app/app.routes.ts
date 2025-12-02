@@ -7,6 +7,7 @@ import { DondeEstamos } from './ejercicios-ROUTING/ejercicio0/donde-estamos/dond
 import { QuienesSomos } from './ejercicios-ROUTING/ejercicio0/quienes-somos/quienes-somos';
 import { FormularioDeContacto } from './ejercicios-ROUTING/ejercicio0/formulario-de-contacto/formulario-de-contacto';
 import { Finalizo } from './ejercicios-ROUTING/ejercicio1/finalizo/finalizo';
+import { Ejer2destino } from './ejercicios-ROUTING/ejercicio2/ejer2destino/ejer2destino';
 
 export const routes: Routes = [
 /*{ path: 'hacia', component:Hacia},
@@ -15,5 +16,7 @@ export const routes: Routes = [
 { path: 'quienes-somos', component:QuienesSomos},
 { path: 'formulario-contacto', component:FormularioDeContacto},
 { path: 'finalizo/:id', component:Finalizo},
+{ path: 'ejer2destino/:nombre/:ciudad', component: Ejer2destino },
 { path: '**', component: ERRORNAVEGACION}
+
 ];

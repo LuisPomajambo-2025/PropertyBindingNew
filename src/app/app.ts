@@ -9,11 +9,12 @@ import { RouterOutlet } from '@angular/router';
 import { Inicio } from './ejercicios-ROUTING/ejercicio0/inicio/inicio';
 import { Empiezo } from "./ejercicios-ROUTING/ejercicio1/empiezo/empiezo";
 import { Desde } from './ROUTING/desde/desde';
+import { Ej2empiezo } from './ejercicios-ROUTING/ejercicio2/ej2empiezo/ej2empiezo';
 
 @Component({
   selector: 'app-root',
  // imports: [Inicio, Desde, RouterOutlet, EJERCICIO1, EJERCICIO2, EJERCICIO3, EJERCICIO4, EJERCICIO5],
-  imports: [RouterOutlet, Inicio, Desde,Empiezo],
+  imports: [RouterOutlet, Inicio, Desde,Empiezo, Ej2empiezo],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -20,6 +20,7 @@ import { Inicioinmobiliaria } from './ejercicios-ROUTING/ejercicio4/inicioinmobi
 export const routes: Routes = [
 /*{ path: 'hacia', component:Hacia},
 { path: 'parametro/:id', component:Parametro},*/
+ { path: '', redirectTo: 'inicio', pathMatch: 'full' },
 { path: 'cuenta', component: Cuentausuario,
     children: [
       { path: '', redirectTo: 'perfil', pathMatch: 'full' },
@@ -30,6 +31,7 @@ export const routes: Routes = [
 },
 { path: 'inicio', component:Inicio,
     children: [
+        { path: '', redirectTo: 'quienes-somos', pathMatch: 'full' },
         { path: 'donde-estamos', component:DondeEstamos},
         { path: 'quienes-somos', component:QuienesSomos},
         { path: 'formulario-contacto', component:FormularioDeContacto},

@@ -1,7 +1,35 @@
-<h1>Detalle del inmueble</h1>
+<div style="
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 2px solid #DD0031;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+">
 
-<p>Mostrando información del inmueble con ID: {{ inmuebleId }}</p>
-<p>Mostrando información del inmueble con TITULO: {{ titulo }}</p>
-<p>Mostrando información del inmueble con PRECIO: {{ precio }}</p>
+  <h1 style="color: #DD0031; text-align: center;">Detalle del inmueble</h1>
 
-<button (click)="volver()">Volver</button>
+  <div style="margin-top: 20px; line-height: 1.6;">
+    <p><strong>ID:</strong> {{ inmuebleId }}</p>
+    <p><strong>Título:</strong> {{ titulo }}</p>
+    <p><strong>Precio:</strong> {{ precio | currency:'EUR' }}</p>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <button (click)="volver()"
+            style="
+              background-color: #C3002F;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              font-weight: bold;
+              border-radius: 6px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+            "
+            (mouseover)="hover = true" (mouseout)="hover = false"
+            [style.backgroundColor]="hover ? '#DD0031' : '#C3002F'">
+      Volver
+    </button>
+  </div>

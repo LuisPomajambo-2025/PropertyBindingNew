@@ -1,11 +1,28 @@
 <h1>Ejercicio 4 Routing</h1>
 <h2>Lista de inmuebles</h2>
 
-@for (item of inmuebles; track item.id) {
-  <div class="card">
-    <h3>{{ item.titulo }}</h3>
-    <p>Precio: {{ item.precio | currency:'EUR' }}</p>
-    <button (click)="verDetalle(item.id, item.titulo, item.precio)">Más información</button>
-  </div>
-}
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+  <thead style="background-color: #DD0031; color: white;">
+    <tr>
+      <th style="padding: 10px; border: 1px solid #ccc;">Título</th>
+      <th style="padding: 10px; border: 1px solid #ccc;">Precio</th>
+      <th style="padding: 10px; border: 1px solid #ccc;">Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of inmuebles; track item.id) {
+      <tr>
+        <td style="padding: 10px; border: 1px solid #ccc;">{{ item.titulo }}</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">{{ item.precio | currency:'EUR' }}</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">
+          <button (click)="verDetalle(item.id, item.titulo, item.precio)"
+                  style="padding: 5px 12px; background-color:#C3002F; color:white; border:none; cursor:pointer;">
+            Más información
+          </button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+
 <router-outlet></router-outlet>

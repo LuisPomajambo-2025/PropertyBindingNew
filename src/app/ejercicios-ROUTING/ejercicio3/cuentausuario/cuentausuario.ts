@@ -10,5 +10,7 @@ import { RouterModule } from "@angular/router";
   styleUrl: './cuentausuario.css',
 })
 export class Cuentausuario {
-
+  hoverPerfil = false;
+  hoverConfig = false;
+  hoverHistorial = false;
 }

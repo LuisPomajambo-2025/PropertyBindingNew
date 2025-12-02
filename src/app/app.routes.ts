@@ -15,6 +15,8 @@ import { Historial } from './ejercicios-ROUTING/ejercicio3/historial/historial';
 import { Inicio } from './ejercicios-ROUTING/ejercicio0/inicio/inicio';
 import { Empiezo } from './ejercicios-ROUTING/ejercicio1/empiezo/empiezo';
 import { Ej2empiezo } from './ejercicios-ROUTING/ejercicio2/ej2empiezo/ej2empiezo';
+import { Detalleinmueble } from './ejercicios-ROUTING/ejercicio4/detalleinmueble/detalleinmueble';
+import { Inicioinmobiliaria } from './ejercicios-ROUTING/ejercicio4/inicioinmobiliaria/inicioinmobiliaria';
 export const routes: Routes = [
 /*{ path: 'hacia', component:Hacia},
 { path: 'parametro/:id', component:Parametro},*/
@@ -40,5 +42,7 @@ export const routes: Routes = [
 },
 { path: 'ej2empiezo', component: Ej2empiezo },
 { path: 'ejer2destino/:nombre/:ciudad', component: Ejer2destino },
+{ path: 'inicioinmueble', component: Inicioinmobiliaria },
+{ path: 'detalleinmueble/:id/:titulo/:precio', component: Detalleinmueble },  
 { path: '**', component: ERRORNAVEGACION}
 ];

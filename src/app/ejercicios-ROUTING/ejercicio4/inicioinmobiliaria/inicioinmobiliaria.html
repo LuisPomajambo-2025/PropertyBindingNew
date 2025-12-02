@@ -1,0 +1,11 @@
+<h1>Ejercicio 4 Routing</h1>
+<h2>Lista de inmuebles</h2>
+
+@for (item of inmuebles; track item.id) {
+  <div class="card">
+    <h3>{{ item.titulo }}</h3>
+    <p>Precio: {{ item.precio | currency:'EUR' }}</p>
+    <button (click)="verDetalle(item.id, item.titulo, item.precio)">Más información</button>
+  </div>
+}
+<router-outlet></router-outlet>

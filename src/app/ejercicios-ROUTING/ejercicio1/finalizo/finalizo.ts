@@ -3,6 +3,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-finalizo',
+  standalone: true,  
   imports: [RouterModule],
   templateUrl: './finalizo.html',
   styleUrl: './finalizo.css',

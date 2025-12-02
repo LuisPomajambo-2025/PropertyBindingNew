@@ -4,6 +4,7 @@ import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-ej2empiezo',
+  standalone: true,
   imports: [FormsModule, RouterOutlet],
   templateUrl: './ej2empiezo.html',
   styleUrl: './ej2empiezo.css',
@@ -11,10 +12,8 @@ import { Router, RouterOutlet } from '@angular/router';
 export class Ej2empiezo {
   ciudad: string = 'Madrid';
   nombre: string = 'Juan';
-
   constructor(private router: Router) {}
-
-  goToDetalle() {
-    this.router.navigate(['/ejer2destino', this.nombre, this.ciudad]);
+goToDetalle() {
+      this.router.navigate(['ejer2destino', this.nombre, this.ciudad]);
   }
-}
+}                           

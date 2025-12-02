@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 //import { EJERCICIO1 } from './ejercicio-03-BINDING/ejercicio-1/ejercicio-1';
 //import { EJERCICIO2 } from './ejercicio-03-BINDING/ejercicio-2/ejercicio-2';
 //import { EJERCICIO3 } from './ejercicio-03-BINDING/ejercicio-3/ejercicio-3';
@@ -10,14 +10,16 @@ import { Inicio } from './ejercicios-ROUTING/ejercicio0/inicio/inicio';
 import { Empiezo } from "./ejercicios-ROUTING/ejercicio1/empiezo/empiezo";
 import { Desde } from './ROUTING/desde/desde';
 import { Ej2empiezo } from './ejercicios-ROUTING/ejercicio2/ej2empiezo/ej2empiezo';
+import { Cuentausuario } from "./ejercicios-ROUTING/ejercicio3/cuentausuario/cuentausuario";
 
 @Component({
   selector: 'app-root',
  // imports: [Inicio, Desde, RouterOutlet, EJERCICIO1, EJERCICIO2, EJERCICIO3, EJERCICIO4, EJERCICIO5],
-  imports: [RouterOutlet, Inicio, Desde,Empiezo, Ej2empiezo],
+  imports: [RouterOutlet, Inicio, Desde, Empiezo, Ej2empiezo, Cuentausuario, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('solucion-ejercicios');
+  
 }

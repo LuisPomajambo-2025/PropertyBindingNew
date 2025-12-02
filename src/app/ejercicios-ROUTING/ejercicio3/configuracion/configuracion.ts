@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-
 @Component({
-  selector: 'app-empiezo',
+  selector: 'app-configuracion',
   standalone: true,  
   imports: [RouterModule],
-  templateUrl: './empiezo.html',
-  styleUrl: './empiezo.css',
+  templateUrl: './configuracion.html',
+  styleUrl: './configuracion.css',
 })
-export class Empiezo {
+export class Configuracion {
 
 }

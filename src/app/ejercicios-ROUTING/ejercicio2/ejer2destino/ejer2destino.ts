@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ejer2destino',
@@ -13,7 +13,7 @@ export class Ejer2destino implements OnInit {
   nombre!: string | null;
   ciudad!: string | null;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     const paramnombre = this.route.snapshot.paramMap.get('nombre');
@@ -26,7 +26,9 @@ export class Ejer2destino implements OnInit {
     }
     console.log('Parametro componente inicializado con:', this.nombre + " - "+this.ciudad);
   }
-
+volver() {
+  this.router.navigate(['/ej2empiezo']);
+}
 
 
 }

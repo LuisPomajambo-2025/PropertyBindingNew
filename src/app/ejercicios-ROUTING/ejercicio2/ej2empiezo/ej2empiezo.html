@@ -1,20 +1,19 @@
-<h1>Ejercicio2 empiezo Routing</h1>
+<section class="form-demo">
+  <h2 class="title">Ejercicio 2: Comienzo de Routing</h2>
 
-<label>
-  Nombre:
-  <input [(ngModel)]="nombre" />
-</label>
+  <div class="form-field">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" [(ngModel)]="nombre" />
+  </div>
 
-<br />
+  <div class="form-field">
+    <label for="ciudad">Ciudad</label>
+    <input id="ciudad" [(ngModel)]="ciudad" />
+  </div>
 
-<label>
-  Ciudad:
-  <input [(ngModel)]="ciudad" />
-</label>
+  <button class="primary-btn" (click)="goToDetalle()">
+    Ir al detalle con parámetros
+  </button>
 
-<br /><br />
-
-<button (click)="goToDetalle()">
-  Ir al detalle con parámetros
-</button>
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+</section>

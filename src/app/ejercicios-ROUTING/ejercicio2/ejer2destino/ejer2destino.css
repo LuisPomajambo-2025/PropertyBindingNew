@@ -1,0 +1,44 @@
+.details-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  max-width: 420px;
+  font-family: inherit;
+}
+
+.details-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #1e293b;
+  padding: 0.3rem 0;
+}
+
+.details-box[open] .details-title {
+  margin-bottom: 0.8rem;
+}
+
+.details-content p {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  color: #334155;
+}
+
+.back-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #2563eb;
+}
+🔄 ⭐ Si

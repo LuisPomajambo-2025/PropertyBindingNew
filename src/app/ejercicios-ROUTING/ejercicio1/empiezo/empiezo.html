@@ -1,3 +1,13 @@
-<h1>Ejercicio 1 Routing</h1>
-<a [routerLink] = "['finalizo', 42]"><h3>ir al parametro 42</h3></a>
-<router-outlet></router-outlet>
+<section class="routing-demo">
+  <h2 class="title">Ejercicio 1: Routing</h2>
+
+  <a 
+    [routerLink]="['finalizo', 42]" 
+    class="link-button"
+    aria-label="Ir al parámetro 42"
+  >
+    Ir al parámetro 42
+  </a>
+
+  <router-outlet></router-outlet>
+</section>

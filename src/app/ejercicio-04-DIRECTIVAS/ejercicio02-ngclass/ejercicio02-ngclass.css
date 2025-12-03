@@ -1,0 +1,18 @@
+.cuadro {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.activo {
+  background-color: rgb(128, 128, 0);
+}
+
+.inactivo {
+  background-color: red;
+}

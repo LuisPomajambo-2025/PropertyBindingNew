@@ -1,1 +1,8 @@
-<p>ejercicio03-ngif works!</p>
+@if (estaAutenticado) {
+  <p>Bienvenido</p>
+} @else {
+  <p>Por favor, inicia sesión</p>
+}
+
+<button (click)="toggleAuth()">Toggle autenticación</button>
+<router-outlet></router-outlet>

@@ -1,1 +1,18 @@
-<p>ejercicio04-ngswitch works!</p>
+@switch (rolUsuario) {
+  @case ('admin') {
+    <p>¡Bienvenido Administrador! Tienes acceso completo.</p>
+  }
+  @case ('editor') {
+    <p>¡Hola Editor! Puedes editar contenido.</p>
+  }
+  @case ('viewer') {
+    <p>¡Hola Viewer! Solo puedes ver el contenido.</p>
+  }
+  @default {
+    <p>Rol desconocido.</p>
+  }
+}
+
+<button (click)="cambiarRol()">Cambiar Rol</button>
+<p>Rol actual: {{ rolUsuario }}</p>
+<router-outlet></router-outlet>

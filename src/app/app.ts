@@ -11,11 +11,15 @@ import { Empiezo } from "./ejercicios-ROUTING/ejercicio1/empiezo/empiezo";
 import { Desde } from './ROUTING/desde/desde';
 import { Ej2empiezo } from './ejercicios-ROUTING/ejercicio2/ej2empiezo/ej2empiezo';
 import { Cuentausuario } from "./ejercicios-ROUTING/ejercicio3/cuentausuario/cuentausuario";
+import { Ejercicio01NGSTYLE } from './ejercicio-04-DIRECTIVAS/ejercicio01-ngstyle/ejercicio01-ngstyle';
+import { Ejercicio02NGCLASS } from './ejercicio-04-DIRECTIVAS/ejercicio02-ngclass/ejercicio02-ngclass';
+import { Ejercicio03NGIF } from './ejercicio-04-DIRECTIVAS/ejercicio03-ngif/ejercicio03-ngif';
+import { Ejercicio04NGSWITCH } from './ejercicio-04-DIRECTIVAS/ejercicio04-ngswitch/ejercicio04-ngswitch';
 
 @Component({
   selector: 'app-root',
  // imports: [Inicio, Desde, RouterOutlet, EJERCICIO1, EJERCICIO2, EJERCICIO3, EJERCICIO4, EJERCICIO5],
-  imports: [RouterOutlet, Inicio, Desde, Empiezo, Ej2empiezo, Cuentausuario, RouterLink],
+  imports: [RouterOutlet, Inicio, Desde, Empiezo, Ej2empiezo, Cuentausuario, RouterLink, Ejercicio01NGSTYLE, Ejercicio02NGCLASS, Ejercicio03NGIF, Ejercicio04NGSWITCH],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,1 +1,12 @@
-<p>ejercicio02-ngclass works!</p>
+<div 
+  [class.activo]="status === 'activo'"
+  [class.inactivo]="status === 'inactivo'"
+  class="cuadro"
+>
+  {{ status | titlecase }}
+</div>
+
+<button (click)="toggleStatus()" style="margin-top: 10px;">
+  Cambiar estado class
+</button>
+<router-outlet></router-outlet>

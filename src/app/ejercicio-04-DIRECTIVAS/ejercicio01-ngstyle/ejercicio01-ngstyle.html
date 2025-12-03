@@ -1,1 +1,12 @@
-<p>ejercicio01-ngstyle works!</p>
+<div 
+  [style.background-color]="esActivo ? 'green' : 'red'" 
+  style="width: 200px; height: 100px; color: white; display: flex; align-items: center; justify-content: center;"
+>
+  {{ esActivo ? 'Activo' : 'Inactivo' }}
+</div>
+
+<button (click)="toggleActivo()" style="margin-top: 10px;">
+  Cambiar estado style
+</button>
+
+<router-outlet></router-outlet>

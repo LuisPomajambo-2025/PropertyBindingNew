@@ -8,7 +8,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/app/ejercicio-04-DIRECTIVAS/ejercicio05-ngfor/tarea.interface"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]

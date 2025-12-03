@@ -1,0 +1,104 @@
+:root {
+  --angular-red: #dd0031;
+  --angular-red-dark: #b30027;
+  --bg-light: #f5f5f5;
+  --text-dark: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-family: Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--angular-red-dark);
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.combo-check {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-light);
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.check-item:hover {
+  background: #ececef;
+}
+
+.select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  transition: 0.2s ease;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--angular-red);
+}
+
+.btn {
+  background: var(--angular-red);
+  color: white;
+  padding: 12px 22px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: var(--angular-red-dark);
+}
+.btn-detalle {
+  background: #dd0031;         /* rojo Angular principal */
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-detalle:hover {
+  background: #b30027;         /* rojo más oscuro al pasar el mouse */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.btn-detalle:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

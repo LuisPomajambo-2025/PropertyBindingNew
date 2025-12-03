@@ -1,0 +1,26 @@
+<div class="detalle-wrapper">
+  <h2 class="titulo">Resumen del Pedido</h2>
+
+  @if (criterios) {
+    <div class="cards-container">
+      
+      @for (item of [
+        { titulo: 'Tamaño de RAM', valor: criterios.tamanoRam?.join(', ') },
+        { titulo: 'Procesador', valor: criterios.tipoProcesador },
+        { titulo: 'Tarjeta gráfica', valor: criterios.tarjetaGrafica?.join(', ') },
+        { titulo: 'Discos duros', valor: criterios.discoDuro?.join(', ') },
+        { titulo: 'Fuente de alimentación', valor: criterios.fuenteAlimentacion }
+      ]; track item) {
+        <div class="card">
+          <h3>{{ item.titulo }}</h3>
+          <p>{{ item.valor }}</p>
+        </div>
+      }
+
+    </div>
+  }
+    <div class="volver-container">
+    <!-- CORRECTO: usar (click) -->
+    <button class="btn-volver" (click)="volver()">Volver al formulario</button>
+  </div>
+</div>

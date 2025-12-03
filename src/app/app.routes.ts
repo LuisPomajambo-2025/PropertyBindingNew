@@ -21,6 +21,9 @@ import { Ejercicio01NGSTYLE } from './ejercicio-04-DIRECTIVAS/ejercicio01-ngstyl
 import { Ejercicio02NGCLASS } from './ejercicio-04-DIRECTIVAS/ejercicio02-ngclass/ejercicio02-ngclass';
 import { Ejercicio03NGIF } from './ejercicio-04-DIRECTIVAS/ejercicio03-ngif/ejercicio03-ngif';
 import { Ejercicio04NGSWITCH } from './ejercicio-04-DIRECTIVAS/ejercicio04-ngswitch/ejercicio04-ngswitch';
+import { Ejercicio05NGFOR } from './ejercicio-04-DIRECTIVAS/ejercicio05-ngfor/ejercicio05-ngfor';
+import { Ejercicio06FORMULARIODINAMICO } from './ejercicio-04-DIRECTIVAS/ejercicio06-formulariodinamico/ejercicio06-formulariodinamico';
+import { Ejercicio06Detalleformulario } from './ejercicio-04-DIRECTIVAS/ejercicio06-detalleformulario/ejercicio06-detalleformulario';
 export const routes: Routes = [
 /*{ path: 'hacia', component:Hacia},
 { path: 'parametro/:id', component:Parametro},*/
@@ -54,5 +57,8 @@ export const routes: Routes = [
 { path: 'ejercicio02-ngclass', component: Ejercicio02NGCLASS}, 
 { path: 'ejercicio03-ngif', component: Ejercicio03NGIF},
 { path: 'ejercicio04-ngswitch', component: Ejercicio04NGSWITCH},
+{ path: 'ejercicio05-ngfor', component: Ejercicio05NGFOR},
+{ path: 'ejercicio06-formulariodinamico', component: Ejercicio06FORMULARIODINAMICO},
+{ path: 'ejercicio06-detalleformulario', component: Ejercicio06Detalleformulario},
 { path: '**', component: ERRORNAVEGACION}
 ];

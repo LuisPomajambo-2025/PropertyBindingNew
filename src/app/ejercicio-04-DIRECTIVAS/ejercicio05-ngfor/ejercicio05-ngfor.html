@@ -1,1 +1,23 @@
-<p>ejercicio05-ngfor works!</p>
+<table style="width:100%; border-collapse: collapse; font-family: sans-serif;">
+  <thead style="background-color:#63BE21; color:white;">
+    <tr>
+      <th style="padding:8px; border: 1px solid #4b9b18;">ID</th>
+      <th style="padding:8px; border: 1px solid #4b9b18;">Título</th>
+      <th style="padding:8px; border: 1px solid #4b9b18;">Completada</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (tarea of tareas; track tarea.id) {
+      <tr style="background-color:#eef8e6; border: 1px solid #d6e8c9;">
+        <td style="padding:8px; border: 1px solid #d6e8c9;">{{ tarea.id }}</td>
+        <td style="padding:8px; border: 1px solid #d6e8c9;">{{ tarea.titulo }}</td>
+        <td style="padding:8px; border: 1px solid #d6e8c9;">
+          {{ tarea.completada ? '✔️' : '❌' }}
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>

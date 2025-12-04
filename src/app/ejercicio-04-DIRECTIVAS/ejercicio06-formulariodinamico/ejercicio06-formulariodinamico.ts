@@ -1,52 +1,35 @@
 
 import { Component, inject } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-ejercicio06-formulariodinamico',
   standalone: true,
-  imports: [],
+imports: [FormsModule, RouterModule],
   templateUrl: './ejercicio06-formulariodinamico.html',
   styleUrl: './ejercicio06-formulariodinamico.css',
 })
 export class Ejercicio06FORMULARIODINAMICO  {
+tamanosRam: string[] = ['8 GB', '16 GB', '32 GB', '64 GB'];
+tiposProcesador: string[] = ['Intel i5', 'Intel i7', 'AMD Ryzen 5', 'AMD Ryzen 7'];
+tarjetasGraficas: string[] = ['NVIDIA GTX 1660', 'NVIDIA RTX 3060', 'AMD RX 6600'];
+discosDuros: string[] = ['HDD 1TB', 'SSD 500GB', 'NVMe 1TB'];
+fuentesAlimentacion: string[] = ['500W', '650W', '750W'];
 
-  private fb = inject(FormBuilder);
-  private router = inject(Router);
 
-  // Arrays de selección
-  tamanosRAM = ['8GB', '16GB', '32GB', '64GB'];
-  tiposProcesador = ['Intel i5', 'Intel i7', 'Ryzen 5', 'Ryzen 7'];
-  tarjetasGraficas = ['RTX 3060', 'RTX 3070', 'RX 6800'];
-  discosDuros = ['SSD 512GB', 'SSD 1TB', 'HDD 2TB'];
-  fuentesAlimentacion = ['500W', '650W', '750W'];
+seleccion = {
+ram: this.tamanosRam[0],
+procesador: this.tiposProcesador[0],
+grafica: this.tarjetasGraficas[0],
+disco: this.discosDuros[0],
+fuente: this.fuentesAlimentacion[0]
+};
 
-  // Formulario reactivo
-  form: FormGroup = this.fb.group({
-    tamanoRam: [[this.tamanosRAM[0]]],
-    tipoProcesador: [this.tiposProcesador[0]],
-    tarjetaGrafica: [[this.tarjetasGraficas[0]]],
-    discoDuro: [[this.discosDuros[0]]],
-    fuenteAlimentacion: [this.fuentesAlimentacion[0]]
-  });
 
-  // Alterna elementos en los combos check
-  toggleSelection(campo: string, valor: string) {
-    const arr: string[] = this.form.value[campo];
+constructor(private router: Router) {}
 
-    if (arr.includes(valor)) {
-      const actualizado = arr.filter(v => v !== valor);
-      this.form.patchValue({ [campo]: actualizado });
-    } else {
-      this.form.patchValue({ [campo]: [...arr, valor] });
-    }
-  }
 
-  // Enviar TODO al componente detalle
-  goToDetalle() {
-    this.router.navigate(['/ejercicio06-detalleformulario'], {
-      state: { criterios: this.form.value }
-    });
-  }
-
+verDetalle() {
+this.router.navigate(['/ejercicio06-detalleformulario', this.seleccion]);
+}
 }

@@ -1,81 +1,57 @@
-<div class="container">
+<div class="contenedor">
+<h2>Configuración de PC</h2>
 
-  <!-- RAM -->
-  <div class="row">
-    <label class="label">Tamaño de RAM</label>
-    <div class="combo-check">
-      @for (ram of tamanosRAM; track ram) {
-        <label class="check-item">
-          <input 
-            type="checkbox"
-            [checked]="form.value.tamanoRam.includes(ram)"
-            (change)="toggleSelection('tamanoRam', ram)"
-          />
-          {{ ram }}
-        </label>
-      }
-    </div>
-  </div>
 
-  <!-- Procesador -->
-  <div class="row">
-    <label class="label">Tipo de procesador</label>
-    <select class="select" formControlName="tipoProcesador">
-      @for (tipo of tiposProcesador; track tipo) {
-        <option [value]="tipo">{{ tipo }}</option>
-      }
-    </select>
-  </div>
-
-  <!-- Tarjeta gráfica -->
-  <div class="row">
-    <label class="label">Tarjeta gráfica</label>
-    <div class="combo-check">
-      @for (gpu of tarjetasGraficas; track gpu) {
-        <label class="check-item">
-          <input 
-            type="checkbox"
-            [checked]="form.value.tarjetaGrafica.includes(gpu)"
-            (change)="toggleSelection('tarjetaGrafica', gpu)"
-          />
-          {{ gpu }}
-        </label>
-      }
-    </div>
-  </div>
-
-  <!-- Discos duros -->
-  <div class="row">
-    <label class="label">Discos duros</label>
-    <div class="combo-check">
-      @for (disco of discosDuros; track disco) {
-        <label class="check-item">
-          <input 
-            type="checkbox"
-            [checked]="form.value.discoDuro.includes(disco)"
-            (change)="toggleSelection('discoDuro', disco)"
-          />
-          {{ disco }}
-        </label>
-      }
-    </div>
-  </div>
-
-  <!-- Fuente de alimentación -->
-  <div class="row">
-    <label class="label">Fuente de alimentación</label>
-    <select class="select" formControlName="fuenteAlimentacion">
-      @for (fuente of fuentesAlimentacion; track fuente) {
-        <option [value]="fuente">{{ fuente }}</option>
-      }
-    </select>
-  </div>
-
-<!-- BOTÓN DETALLE DE PEDIDO -->
-<div class="row">
-  <button class="btn-detalle" (click)="goToDetalle()">
-    Detalle de pedido
-  </button>
+<div class="fila">
+<label>Tamaño de RAM:</label>
+<select [(ngModel)]="seleccion.ram">
+@for (ram of tamanosRam; track $index) {
+<option>{{ ram }}</option>
+}
+</select>
 </div>
 
+
+<div class="fila">
+<label>Tipo de Procesador:</label>
+<select [(ngModel)]="seleccion.procesador">
+@for (proc of tiposProcesador; track $index) {
+<option>{{ proc }}</option>
+}
+</select>
 </div>
+
+
+<div class="fila">
+<label>Tarjeta Gráfica:</label>
+<select [(ngModel)]="seleccion.grafica">
+@for (g of tarjetasGraficas; track $index) {
+<option>{{ g }}</option>
+}
+</select>
+</div>
+
+
+<div class="fila">
+<label>Disco Duro:</label>
+<select [(ngModel)]="seleccion.disco">
+@for (d of discosDuros; track $index) {
+<option>{{ d }}</option>
+}
+</select>
+</div>
+
+
+<div class="fila">
+<label>Fuente de Alimentación:</label>
+<select [(ngModel)]="seleccion.fuente">
+@for (f of fuentesAlimentacion; track $index) {
+<option>{{ f }}</option>
+}
+</select>
+</div>
+
+
+<button (click)="verDetalle()">Ver Detalle</button>
+</div>
+<router-outlet></router-outlet>

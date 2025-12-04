@@ -18,6 +18,6 @@ this.datos = params;
 }
 
 volver() {
-    this.router.navigate(['/formularioincripcioncurso']);
+    this.router.navigate(['/directivas-menu/formularioincripcioncurso']);
 }
 }

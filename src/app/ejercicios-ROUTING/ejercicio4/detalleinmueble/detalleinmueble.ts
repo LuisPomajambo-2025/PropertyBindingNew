@@ -28,7 +28,7 @@ precio!: number;
   
 
   volver() {
-    this.router.navigate(['/inicioinmueble']);
+    this.router.navigate(['/routing-menu/inicioinmueble']);
   }
   
 }

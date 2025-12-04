@@ -18,7 +18,7 @@ this.datos = params;
 }
 
 volver() {
-    this.router.navigate(['/ejercicio06-formulariodinamico']);
+    this.router.navigate(['/directivas-menu/ejercicio06-formulariodinamico']);
 }
 }
 

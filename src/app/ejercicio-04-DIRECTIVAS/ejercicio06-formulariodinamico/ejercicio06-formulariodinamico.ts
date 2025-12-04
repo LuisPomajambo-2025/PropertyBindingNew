@@ -30,6 +30,6 @@ constructor(private router: Router) {}
 
 
 verDetalle() {
-this.router.navigate(['/ejercicio06-detalleformulario', this.seleccion]);
+this.router.navigate(['/directivas-menu/ejercicio06-detalleformulario', this.seleccion]);
 }
 }

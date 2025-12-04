@@ -25,6 +25,6 @@ constructor(private router: Router) {}
 
 
 verDetalle() {
-this.router.navigate(['/detallesincripcion', this.seleccion]);
+this.router.navigate(['/directivas-menu/detallesincripcion', this.seleccion]);
 }
 }

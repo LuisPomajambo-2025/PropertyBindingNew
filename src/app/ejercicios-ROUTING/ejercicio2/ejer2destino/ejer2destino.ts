@@ -27,7 +27,7 @@ export class Ejer2destino implements OnInit {
     console.log('Parametro componente inicializado con:', this.nombre + " - "+this.ciudad);
   }
 volver() {
-  this.router.navigate(['/ej2empiezo']);
+  this.router.navigate(['/routing-menu/ej2empiezo']);
 }
 
 

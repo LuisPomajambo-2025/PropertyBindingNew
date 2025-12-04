@@ -14,6 +14,6 @@ export class Ej2empiezo {
   nombre: string = 'Juan';
   constructor(private router: Router) {}
 goToDetalle() {
-      this.router.navigate(['ejer2destino', this.nombre, this.ciudad]);
+      this.router.navigate(['/routing-menu/ejer2destino', this.nombre, this.ciudad]);
   }
 }                           

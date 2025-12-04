@@ -5,7 +5,7 @@
 <div class="fila">
 <label>Tamaño de RAM:</label>
 <select [(ngModel)]="seleccion.ram">
-@for (ram of tamanosRam; track $index) {
+@for (ram of tamanosRam; track ram) {
 <option>{{ ram }}</option>
 }
 </select>
@@ -15,7 +15,7 @@
 <div class="fila">
 <label>Tipo de Procesador:</label>
 <select [(ngModel)]="seleccion.procesador">
-@for (proc of tiposProcesador; track $index) {
+@for (proc of tiposProcesador; track proc) {
 <option>{{ proc }}</option>
 }
 </select>
@@ -25,7 +25,7 @@
 <div class="fila">
 <label>Tarjeta Gráfica:</label>
 <select [(ngModel)]="seleccion.grafica">
-@for (g of tarjetasGraficas; track $index) {
+@for (g of tarjetasGraficas; track g) {
 <option>{{ g }}</option>
 }
 </select>
@@ -35,7 +35,7 @@
 <div class="fila">
 <label>Disco Duro:</label>
 <select [(ngModel)]="seleccion.disco">
-@for (d of discosDuros; track $index) {
+@for (d of discosDuros; track d) {
 <option>{{ d }}</option>
 }
 </select>
@@ -45,7 +45,7 @@
 <div class="fila">
 <label>Fuente de Alimentación:</label>
 <select [(ngModel)]="seleccion.fuente">
-@for (f of fuentesAlimentacion; track $index) {
+@for (f of fuentesAlimentacion; track f) {
 <option>{{ f }}</option>
 }
 </select>

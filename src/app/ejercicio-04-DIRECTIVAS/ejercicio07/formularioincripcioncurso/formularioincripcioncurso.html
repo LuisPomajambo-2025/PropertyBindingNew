@@ -1,0 +1,36 @@
+<div class="contenedor">
+<h2>Inscripción Curso de Programación</h2>
+
+
+<div class="fila">
+<label>Generos:</label>
+<select [(ngModel)]="seleccion.genero">
+@for (gen of generos; track gen) {
+<option>{{ gen }}</option>
+}
+</select>
+</div>
+
+
+<div class="fila">
+<label>Tipo de Procesador:</label>
+<select [(ngModel)]="seleccion.nacionalidad">
+@for (nac of nacionalidades; track nac) {
+<option>{{ nac }}</option>
+}
+</select>
+</div>
+
+
+<div class="fila">
+<label>Lenguages de programación:</label>
+<select [(ngModel)]="seleccion.lenguageprogramacion">
+@for (len of lenguagesprogramacion; track len) {
+<option>{{ len }}</option>
+}
+</select>
+</div>
+
+<button (click)="verDetalle()">Ver Detalle</button>
+</div>
+<router-outlet></router-outlet>

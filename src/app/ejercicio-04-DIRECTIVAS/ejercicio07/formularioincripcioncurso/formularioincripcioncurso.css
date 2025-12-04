@@ -1,0 +1,55 @@
+.contenedor {
+width: 60%;
+margin: auto;
+padding: 20px;
+background: #f2f2f2;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+font-family: "Segoe UI", sans-serif;
+}
+
+
+h2 {
+text-align: center;
+color: #dd0031;
+margin-bottom: 20px;
+}
+
+
+.fila {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 15px;
+}
+
+
+label {
+font-weight: 600;
+color: #c3002f;
+}
+
+
+select {
+padding: 8px;
+border-radius: 8px;
+border: 1px solid #c3002f;
+}
+
+
+button {
+width: 100%;
+padding: 12px;
+background: #dd0031;
+color: white;
+font-weight: bold;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+button:hover {
+background: #c3002f;
+}

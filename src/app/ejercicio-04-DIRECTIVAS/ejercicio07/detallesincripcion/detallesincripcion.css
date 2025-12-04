@@ -1,0 +1,65 @@
+:root {
+  --angular-red: #dd0031;
+  --angular-red-dark: #b30027;
+  --bg-light: #f4f4f7;
+  --text-dark: #333;
+}
+
+.detalle-wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--angular-red);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: var(--angular-red-dark);
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+.btn-volver {
+  background: #dd0031;
+  color: white;
+  padding: 12px 22px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-volver:hover {
+  background: #b30027;
+}

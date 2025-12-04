@@ -18,11 +18,13 @@ import { Ejercicio04NGSWITCH } from './ejercicio-04-DIRECTIVAS/ejercicio04-ngswi
 import { Ejercicio05NGFOR } from './ejercicio-04-DIRECTIVAS/ejercicio05-ngfor/ejercicio05-ngfor';
 import { Ejercicio06FORMULARIODINAMICO } from './ejercicio-04-DIRECTIVAS/ejercicio06-formulariodinamico/ejercicio06-formulariodinamico';
 import { Ejercicio06Detalleformulario } from './ejercicio-04-DIRECTIVAS/ejercicio06-detalleformulario/ejercicio06-detalleformulario';
+import { Formularioincripcioncurso } from './ejercicio-04-DIRECTIVAS/ejercicio07/formularioincripcioncurso/formularioincripcioncurso';
+import { Detallesincripcion } from './ejercicio-04-DIRECTIVAS/ejercicio07/detallesincripcion/detallesincripcion';
 
 @Component({
   selector: 'app-root',
  // imports: [Inicio, Desde, RouterOutlet, EJERCICIO1, EJERCICIO2, EJERCICIO3, EJERCICIO4, EJERCICIO5],
-  imports: [RouterOutlet, Inicio, Desde, Empiezo, Ej2empiezo, Cuentausuario, RouterLink, Ejercicio01NGSTYLE, Ejercicio02NGCLASS, Ejercicio03NGIF, Ejercicio04NGSWITCH, Ejercicio05NGFOR, Ejercicio06FORMULARIODINAMICO, Ejercicio06Detalleformulario],
+  imports: [RouterOutlet, Inicio, Desde, Empiezo, Ej2empiezo, Cuentausuario, RouterLink, Ejercicio01NGSTYLE, Ejercicio02NGCLASS, Ejercicio03NGIF, Ejercicio04NGSWITCH, Ejercicio05NGFOR, Ejercicio06FORMULARIODINAMICO, Ejercicio06Detalleformulario, Formularioincripcioncurso,Detallesincripcion],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

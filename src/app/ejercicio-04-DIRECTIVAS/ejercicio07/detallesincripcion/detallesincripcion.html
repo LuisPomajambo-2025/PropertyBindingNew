@@ -1,0 +1,16 @@
+<div class="contenedor">
+<h2>Detalle del Pedido</h2>
+
+
+<ul>
+<li><strong>Genero:</strong> {{ datos.genero }}</li>
+<li><strong>Nacionalidad:</strong> {{ datos.nacionalidad }}</li>
+<li><strong>Lenguaje de Programación:</strong> {{ datos.lenguageprogramacion }}</li>
+</ul>
+</div>
+<div class="volver-container">
+    <!-- CORRECTO: usar (click) -->
+    <button class="btn-volver" (click)="volver()">Volver al formulario</button>
+</div>
+
+<router-outlet></router-outlet>

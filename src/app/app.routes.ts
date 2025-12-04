@@ -24,6 +24,8 @@ import { Ejercicio04NGSWITCH } from './ejercicio-04-DIRECTIVAS/ejercicio04-ngswi
 import { Ejercicio05NGFOR } from './ejercicio-04-DIRECTIVAS/ejercicio05-ngfor/ejercicio05-ngfor';
 import { Ejercicio06FORMULARIODINAMICO } from './ejercicio-04-DIRECTIVAS/ejercicio06-formulariodinamico/ejercicio06-formulariodinamico';
 import { Ejercicio06Detalleformulario } from './ejercicio-04-DIRECTIVAS/ejercicio06-detalleformulario/ejercicio06-detalleformulario';
+import { Formularioincripcioncurso } from './ejercicio-04-DIRECTIVAS/ejercicio07/formularioincripcioncurso/formularioincripcioncurso';
+import { Detallesincripcion } from './ejercicio-04-DIRECTIVAS/ejercicio07/detallesincripcion/detallesincripcion';
 export const routes: Routes = [
 /*{ path: 'hacia', component:Hacia},
 { path: 'parametro/:id', component:Parametro},*/
@@ -60,5 +62,7 @@ export const routes: Routes = [
 { path: 'ejercicio05-ngfor', component: Ejercicio05NGFOR},
 { path: 'ejercicio06-formulariodinamico', component: Ejercicio06FORMULARIODINAMICO},
 { path: 'ejercicio06-detalleformulario', component: Ejercicio06Detalleformulario},
+{ path: 'formularioincripcioncurso', component: Formularioincripcioncurso},
+{ path: 'detallesincripcion', component: Detallesincripcion},
 { path: '**', component: ERRORNAVEGACION}
 ];

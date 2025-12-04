@@ -1,11 +1,11 @@
 
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-ejercicio06-formulariodinamico',
   standalone: true,
-imports: [FormsModule, RouterModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './ejercicio06-formulariodinamico.html',
   styleUrl: './ejercicio06-formulariodinamico.css',
 })

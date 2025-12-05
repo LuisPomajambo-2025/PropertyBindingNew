@@ -1,61 +1,15 @@
-<nav style="
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 15px 25px;
-  background: linear-gradient(90deg, #DD0031, #C3002F);
-  color: white;
-  font-family: Arial, sans-serif;
-  border-bottom: 3px solid #C3002F;
-">
+<nav class="navbar">
+  <span class="navbar-title">🔷 Angular Directivas</span>
 
-  <span style="font-size: 20px; font-weight: bold;">
-    🔷 Angular Directivas
-  </span>
+  <a routerLink="ejercicio01-ngstyle" class="nav-link">Ejercicio 1</a>
+  <a routerLink="ejercicio02-ngclass" class="nav-link">Ejercicio 2</a>
+  <a routerLink="ejercicio03-ngif" class="nav-link">Ejercicio 3</a>
+  <a routerLink="ejercicio04-ngswitch" class="nav-link">Ejercicio 4</a>
+  <a routerLink="ejercicio05-ngfor" class="nav-link">Ejercicio 5</a>
+  <a routerLink="ejercicio06-formulariodinamico" class="nav-link">Ejercicio 6</a>
+  <a routerLink="formularioincripcioncurso" class="nav-link">Ejercicio 7</a>
 
-  <a routerLink="ejercicio01-ngstyle" style="color: white; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: 0.3s;"
-     onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
-     onmouseout="this.style.background='transparent'">Ejercicio 1</a>
-
-  <a routerLink="ejercicio02-ngclass" style="color: white; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: 0.3s;"
-     onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
-     onmouseout="this.style.background='transparent'">Ejercicio 2</a>
-
-  <a routerLink="ejercicio03-ngif" style="color: white; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: 0.3s;"
-     onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
-     onmouseout="this.style.background='transparent'">Ejercicio 3</a>
-
-  <a routerLink="ejercicio04-ngswitch" style="color: white; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: 0.3s;"
-     onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
-     onmouseout="this.style.background='transparent'">Ejercicio 4</a>
-
-  <a routerLink="ejercicio05-ngfor" style="color: white; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: 0.3s;"
-     onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
-     onmouseout="this.style.background='transparent'">Ejercicio 5</a>
-
-  <a routerLink="ejercicio06-formulariodinamico" style="color: white; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: 0.3s;"
-     onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
-     onmouseout="this.style.background='transparent'">Ejercicio 6</a>
-
-  <a routerLink="formularioincripcioncurso" style="color: white; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: 0.3s;"
-     onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
-     onmouseout="this.style.background='transparent'">Ejercicio 7</a>
-
-  <button routerLink="/" style="
-    margin-left: auto;
-    background: white;
-    color: #DD0031;
-    font-weight: bold;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;"
-    onmouseover="this.style.background='#f2f2f2'"
-    onmouseout="this.style.background='white'">
-    🔙 Volver al menú
-  </button>
-
+  <button routerLink="/" class="btn-volver">🔙 Volver al menú</button>
 </nav>
 
 <router-outlet></router-outlet>

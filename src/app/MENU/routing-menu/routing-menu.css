@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 25px;
+  background: linear-gradient(90deg, #DD0031, #C3002F);
+  color: white;
+  font-family: Arial, sans-serif;
+  border-bottom: 3px solid #C3002F;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-volver {
+  margin-left: auto;
+  background: white;
+  color: #DD0031;
+  font-weight: bold;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}

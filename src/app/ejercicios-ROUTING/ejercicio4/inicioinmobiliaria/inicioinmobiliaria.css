@@ -1,0 +1,34 @@
+/* Tabla general */
+.tabla-inmuebles {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.tabla-inmuebles thead {
+  background-color: #DD0031;
+  color: white;
+}
+
+/* Celdas */
+.tabla-inmuebles th,
+.tabla-inmuebles td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Botón */
+.btn-info {
+  padding: 5px 12px;
+  background-color: #C3002F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-info:hover {
+  background-color: #DD0031;
+}

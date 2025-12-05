@@ -1,39 +1,14 @@
-<div style="display: flex; font-family: Arial, sans-serif;">
+<div class="layout">
 
-  <!-- Sidebar vertical ajustado al contenido -->
-  <nav style="
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #1976d2; /* Azul Angular */
-    padding: 10px 15px;
-    border-radius: 6px;
-    width: max-content; /* Ajusta al ancho de las opciones */
-  ">
-    <a routerLink="perfil"
-       style="color:white; text-decoration:none; padding:8px 12px; border-radius:4px; transition: background-color 0.3s;"
-       (mouseover)="hoverPerfil=true" (mouseout)="hoverPerfil=false"
-       [style.backgroundColor]="hoverPerfil ? '#1565c0' : 'transparent'">
-      Perfil
-    </a>
-
-    <a routerLink="configuracion"
-       style="color:white; text-decoration:none; padding:8px 12px; border-radius:4px; transition: background-color 0.3s;"
-       (mouseover)="hoverConfig=true" (mouseout)="hoverConfig=false"
-       [style.backgroundColor]="hoverConfig ? '#1565c0' : 'transparent'">
-      Configuración
-    </a>
-
-    <a routerLink="historial"
-       style="color:white; text-decoration:none; padding:8px 12px; border-radius:4px; transition: background-color 0.3s;"
-       (mouseover)="hoverHistorial=true" (mouseout)="hoverHistorial=false"
-       [style.backgroundColor]="hoverHistorial ? '#1565c0' : 'transparent'">
-      Historial de Compras
-    </a>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <a routerLink="perfil" class="sidebar-link">Perfil</a>
+    <a routerLink="configuracion" class="sidebar-link">Configuración</a>
+    <a routerLink="historial" class="sidebar-link">Historial de Compras</a>
   </nav>
 
   <!-- Contenido principal -->
-  <div style="flex: 1; margin-left: 20px; padding: 10px;">
+  <div class="content">
     <router-outlet></router-outlet>
   </div>
 

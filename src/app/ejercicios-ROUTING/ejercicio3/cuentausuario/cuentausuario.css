@@ -1,0 +1,35 @@
+.layout {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #1976d2; /* Azul Angular */
+  padding: 10px 15px;
+  border-radius: 6px;
+  width: max-content;
+}
+
+/* Links */
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: #1565c0;
+}
+
+/* Contenido principal */
+.content {
+  flex: 1;
+  margin-left: 20px;
+  padding: 10px;
+}

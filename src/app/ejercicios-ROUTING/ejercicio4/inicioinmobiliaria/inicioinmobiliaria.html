@@ -1,22 +1,23 @@
 <h1>Ejercicio 4 Routing</h1>
 <h2>Lista de inmuebles</h2>
 
-<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
-  <thead style="background-color: #DD0031; color: white;">
+<table class="tabla-inmuebles">
+  <thead>
     <tr>
-      <th style="padding: 10px; border: 1px solid #ccc;">Título</th>
-      <th style="padding: 10px; border: 1px solid #ccc;">Precio</th>
-      <th style="padding: 10px; border: 1px solid #ccc;">Acción</th>
+      <th>Título</th>
+      <th>Precio</th>
+      <th>Acción</th>
     </tr>
   </thead>
+
   <tbody>
     @for (item of inmuebles; track item.id) {
       <tr>
-        <td style="padding: 10px; border: 1px solid #ccc;">{{ item.titulo }}</td>
-        <td style="padding: 10px; border: 1px solid #ccc;">{{ item.precio | currency:'EUR' }}</td>
-        <td style="padding: 10px; border: 1px solid #ccc;">
-          <button (click)="verDetalle(item.id, item.titulo, item.precio)"
-                  style="padding: 5px 12px; background-color:#C3002F; color:white; border:none; cursor:pointer;">
+        <td>{{ item.titulo }}</td>
+        <td>{{ item.precio | currency:'EUR' }}</td>
+        <td>
+          <button class="btn-info"
+                  (click)="verDetalle(item.id, item.titulo, item.precio)">
             Más información
           </button>
         </td>

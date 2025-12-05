@@ -1,0 +1,39 @@
+.card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 2px solid #DD0031;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.card-title {
+  color: #DD0031;
+  text-align: center;
+}
+
+.card-info {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.card-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-volver {
+  background-color: #C3002F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #DD0031;
+}
